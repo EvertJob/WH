@@ -1,0 +1,16 @@
+version: '2.9'
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    ports:
+      - '8081:80'
+      - '8181:81'
+      - '4443:443'
+    volumes:
+      - /volume1/docker/nginx/config.json:/app/config/production.json
+      - /volume1/docker/nginx/data:/data
+      - /volume1/docker/nginx/letsencrypt:/etc/letsencrypt
+    environment:
+      - PUID=1026
+      - PGID=100
+      - TZ=Europe/Amsterdam
