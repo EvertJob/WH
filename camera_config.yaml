@@ -1,0 +1,17 @@
+camera:                                            
+  - platform: generic      
+    name: Camera Voordeur    
+    still_image_url: http://192.168.1.122/cgi-bin/api.cgi?cmd=Snap&channel=2&rs=wuuPhkmUCeI9WG7C&user=admin&password=admin48
+    stream_source: rtsp://admin:admin48@192.168.1.122:554//h264Preview_03_main
+  - platform: generic                                                                                                       
+    name: Camera Achtertuin                                                                                                 
+    still_image_url: http://192.168.1.122/cgi-bin/api.cgi?cmd=Snap&channel=7&rs=wuuPhkmUCeI9WG7C&user=admin&password=admin48
+    stream_source: rtsp://admin:admin48@192.168.1.122:554//h264Preview_08_main                                              
+  - platform: generic                                                                                                       
+    name: Camera Achterdeur                                                                                                 
+    still_image_url: http://192.168.1.122/cgi-bin/api.cgi?cmd=Snap&channel=4&rs=wuuPhkmUCeI9WG7C&user=admin&password=admin48
+    stream_source: rtsp://admin:admin48@192.168.1.122:554//h264Preview_05_main                                              
+  - platform: generic                                                                                                       
+    name: Camera Voortuin                                                                                                   
+    still_image_url: http://192.168.1.122/cgi-bin/api.cgi?cmd=Snap&channel=6&rs=wuuPhkmUCeI9WG7C&user=admin&password=admin48
+    stream_source: rtsp://admin:admin48@192.168.1.122:554//h264Preview_07_main
